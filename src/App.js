@@ -3,7 +3,7 @@ import './App.css';
 import About from './Components/About';
 import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
-//import TextForm from './Components/TextForm';
+
 
 function App() {
   return (
