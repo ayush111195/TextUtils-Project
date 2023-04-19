@@ -11,6 +11,11 @@ const handleLowClick =()=>{
   setText(newText)
 }
 
+const handleClearClick =()=>{
+  let newText =" "
+  setText(newText)
+}
+
 const handleOnChange=(event)=>{  // on change method humko hmesha ek event provide karwata h jise ki humko apne text area main kuch bhi add kar skte h 
     setText(event.target.value)   // event.target .value se pure text ki value main jo bhi add kar rahe wo setText main add hota ja rha 
     
@@ -28,8 +33,10 @@ const handleOnChange=(event)=>{  // on change method humko hmesha ek event provi
          
         <textarea className="form-control" value={Text} onChange={handleOnChange} id="myBox" rows="8"></textarea>   {/*yhan humne textarea ki value set kar di with the help of state  */}
         </div>                                          {/* jab bhi hum kuch change karege to humhara handleOnChange function run hoga  */}
-        <button className='btn btn-primary' onClick={handleUpClick}>Convert To Uppercase</button> {/*yhan hum chahte h ki jab bhi hum click kare to handleUpclick function chale     */}
-        <button className='btn btn-primary' onClick={handleLowClick}>Convert To Lowercase</button>
+        <button className='btn btn-primary mx-1' onClick={handleUpClick}>Convert To Uppercase</button> {/*yhan hum chahte h ki jab bhi hum click kare to handleUpclick function chale     */}
+        <button className='btn btn-primary mx-1' onClick={handleLowClick}>Convert To Lowercase</button>
+        <button className='btn btn-primary mx-1' onClick={handleClearClick}>Clear</button>
+
     </div>
     <div className='container my-3'>
       <h2>Your Text Summary</h2>
