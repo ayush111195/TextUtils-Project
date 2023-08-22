@@ -7,7 +7,7 @@ import TextForm from './Components/TextForm';
 import Alert from './Components/Alert';
 
 
-function App() {
+function App(){
   const[mode,setMode]=useState('light'); //whwnever dark mode   is enabled or not 
   const[alert,setAlert]=useState(null);
   
