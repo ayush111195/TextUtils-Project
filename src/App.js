@@ -11,7 +11,7 @@ function App() {
   const[mode,setMode]=useState('light'); //whwnever dark mode   is enabled or not 
   const[alert,setAlert]=useState(null);
   
- const showAlert=(message, type)=>{
+ const showAlert= (message, type)=>{
           setAlert({
             msg:message,
             type:type
