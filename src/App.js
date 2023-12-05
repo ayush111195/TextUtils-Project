@@ -16,7 +16,7 @@ function App(){
             msg:message,
             type:type
           })
-          setTimeout(()=>{                    //  YE BNAYA KI KITNE SEC BAAD YE KHUD SE CHALA JAYE APNE APP 
+          setTimeout(()=>{                    // YE BNAYA KI KITNE SEC BAAD YE KHUD SE CHALA JAYE APNE APP 
                setAlert(null)
           },3000)
  } 
